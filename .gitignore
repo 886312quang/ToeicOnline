@@ -14,3 +14,4 @@ toeic-core-test/toeic-core-test.iml
 toeic-web/target
 toeic-web/toeic-web.iml
 toeic-web-logic/target
+/toeic-web/toeic_web_war_exploded.iml
