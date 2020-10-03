@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+
+        <property name="hibernate.connection.driver_class">
+            com.mysql.jdbc.Driver
+        </property>
+
+
+        <property name="hibernate.connection.url"><![CDATA[
+            jdbc:mysql://localhost:3306/toeiconline?autoReconnect=true&characterEncoding=utf-8&useUnicode=true&
+            connectionCollation=utf8_unicode_ci&characterSetResults=utf8
+        ]]></property>
+
+        <property name="hibernate.connection.username">
+            root
+        </property>
+
+        <property name="hibernate.connection.password">
+            mysql886312
+        </property>
+
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+
+        <property name="show_sql">true</property>
+
+        <mapping class="org.myproject.core.persistence.entity.RoleEntity"/>
+        <mapping class="org.myproject.core.persistence.entity.UserEntity"/>
+        <mapping class="org.myproject.core.persistence.entity.ListenGuideLineEntity"/>
+        <mapping class="org.myproject.core.persistence.entity.CommentEntity"/>
+
+    </session-factory>
+</hibernate-configuration>
