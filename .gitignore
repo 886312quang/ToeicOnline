@@ -15,5 +15,6 @@ toeic-web/target
 toeic-web/toeic-web.iml
 toeic-web-logic/target
 toeic-core-serviceimpl/target
+/toeic-core-web/target
 /toeic-web/src/main/webapp/WEB-INF/glassfish-web.xml
 /toeic-web/src/main/webapp/WEB-INF/sun-web.xml
