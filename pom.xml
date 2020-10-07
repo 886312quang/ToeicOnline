@@ -22,6 +22,8 @@
         <module>toeic-core-test</module>
         <module>toeic-api-test</module>
         <module>toeic-core-serviceimpl</module>
+        <module>toeic-core-web</module>
+        <module>toeic-core-serviceImpl</module>
     </modules>
 
     <properties>
@@ -32,6 +34,8 @@
         <testng.version>6.14.3</testng.version>
         <sitemesh.verion>2.4.2</sitemesh.verion>
         <jstl.version>1.2</jstl.version>
+        <log4j.version>1.2.12</log4j.version>
+        <beanutils.version>1.8.0</beanutils.version>
     </properties>
 
     <dependencies>
@@ -79,6 +83,20 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>${jstl.version}</version>
+        </dependency>
+
+        <!--Log4j-->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
+        <!--Bean utils-->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${beanutils.version}</version>
         </dependency>
     </dependencies>
 
